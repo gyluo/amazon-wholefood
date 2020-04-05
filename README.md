@@ -5,26 +5,30 @@
 2. Maven 
 
 
-**Note: Configure web-driver path and test email address.**
+**Note: Configure web-driver path and amazon account.**
 	
-
 - Configure webdriver.
-    - I used ChromeDriver but you can choose other webdriver eg. Mozilla GeckoDriver 
+    - I used ChromeDriver
     - So first download ChromeDriver from [http://chromedriver.chromium.org/downloads](http://chromedriver.chromium.org/downloads).
-    - Copy your downloaded **chromedriver.exe** file path.
-    - Go to `E2EUserJourney\src\test\java\testcases\mytheresa\WebdriverSettings.java` file.
-    - Paste the copied file path in `System.setProperty("webdriver.chrome.driver","Paste path here")`.
+    - Update the path in WebdriverSetting class to point to your driver
 
 
-- Configure test email address.
-    - Change the value of `USER_EMAIL` in `E2EUserJourney\src\main\java\variables\mytheresa\UserVariables.java` 
-    - Note: with same email address you can not create account , so please change the email address before every run of the test. 
+- Configure amazon account.
+    - Update Configures file to point to your amazon.config file path
+    - first line: username
+    - second line: password
+    
+**Place Orders**
 
+This program is only tested for Whole-foods on Amazon. It may not work if you have orders from amazon.com amazon fresh, etc
+- Place orders from Wholefoods and get ready in Carts
+
+**Run Program**    
 	
 Project is ready to run. Execute following commands and enjoy the automatic web-driver test.
-- Go to project path in terminal. For example: C:\Users\User-Name\eclipse-workspace\E2EUserJourney>
+- Go to project path in terminal
 - Run `mvn clean`
 - Run `mvn compile`
 - Run `mvn test`
 
-You can find the test result in `E2EUserJourney\target\surefire-reports\index.html`.
+The program uses a headless chrome browser and will tries to login and get a delivery slot every 2 mins. It exits when order is placed successfully.
