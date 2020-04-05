@@ -1,11 +1,12 @@
 package testcases.amazonwholefood;
 
+import autoslot.pages.*;
 import guoying.pages.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
-import testcases.mytheresa.BrowserSetting;
-import variables.mytheresa.Configures;
+import testcases.settings.BrowserSetting;
+import autoslot.config.Configures;
 
 import java.util.List;
 

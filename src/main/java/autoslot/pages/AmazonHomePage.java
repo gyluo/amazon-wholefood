@@ -1,24 +1,22 @@
-package guoying.pages;
+package autoslot.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class AmazonLoginHomePage {
-    //nav-cart
-
+public class AmazonHomePage {
     WebDriver driver;
 
-    @FindBy(id="nav-cart")
-    WebElement cart_link;
+    @FindBy(id="nav-link-accountList")
+    WebElement account_list_link;
 
-    public AmazonLoginHomePage(WebDriver driver) {
+    public AmazonHomePage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
 
-    public WebElement cartLinkPath() {
-        return cart_link;
+    public WebElement accountListLinkPath() {
+        return account_list_link;
     }
 }

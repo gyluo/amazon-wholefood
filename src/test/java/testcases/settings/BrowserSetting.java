@@ -1,11 +1,11 @@
-package testcases.mytheresa;
+package testcases.settings;
 
 import java.util.concurrent.TimeUnit;
 
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import static variables.mytheresa.UrlVariables.*;
+
+import static autoslot.config.UrlVariables.*;
 
 public class BrowserSetting {
 	

@@ -1,4 +1,4 @@
-package variables.mytheresa;
+package autoslot.config;
 
 import java.io.*;
 

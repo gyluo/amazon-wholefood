@@ -1,4 +1,4 @@
-package guoying.pages;
+package autoslot.pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
