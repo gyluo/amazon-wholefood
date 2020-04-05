@@ -1,4 +1,4 @@
-package testcases.amazonfresh;
+package testcases.amazonwholefood;
 
 import guoying.pages.*;
 import org.openqa.selenium.WebDriver;
@@ -26,13 +26,6 @@ public class BuyFood {
                 System.out.println("Order complete!");
                 break;
             }
-        }
-    }
-
-    private void beeps() throws InterruptedException {
-        for(int i=0; i<1000; i++) {
-            java.awt.Toolkit.getDefaultToolkit().beep();
-            Thread.sleep(1);
         }
     }
 
