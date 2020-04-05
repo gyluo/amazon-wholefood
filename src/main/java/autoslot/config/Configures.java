@@ -7,7 +7,7 @@ public class Configures {
     public static String password;
 
     static {
-        File file = new File("/Users/gluo/amazon.config");
+        File file = new File("/<path>/amazon.config");
 
         BufferedReader br = null;
         try {
