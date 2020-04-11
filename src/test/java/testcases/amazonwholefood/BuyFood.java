@@ -1,7 +1,6 @@
 package testcases.amazonwholefood;
 
 import autoslot.pages.*;
-import guoying.pages.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
